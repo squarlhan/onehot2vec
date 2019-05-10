@@ -25,6 +25,7 @@ model = gensim.models.Doc2Vec.load('doc.model')
 # vec = model.infer_vector(doc_words = tt.split(' '),alpha = 0.25, steps = 50)
 # print(vec)
 
+#transfer all the samples to doc-vectors and saved
 with open('feature.vec', 'a') as f_vec_file:
     with open('feature.seq', 'r') as f_seq_file:
         for line in f_seq_file:
